@@ -35,7 +35,7 @@ variable "ami" {
 
 variable "key_path" {
   description = "SSH Public Key path"
-  default = "/home/uwickch/Desktop/Chathu/AWS/Keys/GallagherUse"
+  default = "~/.ssh/GallagherKey"
 }
 
 #variable "RDS_PASSWORD" { }
