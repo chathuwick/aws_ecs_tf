@@ -12,6 +12,7 @@ resource "aws_vpc" "default" {
 resource "aws_subnet" "public-subnet01" {
   vpc_id = "${aws_vpc.default.id}"
   cidr_block = "${var.public_subnet_cidr01}"
+  map_public_ip_on_launch = "true"
   availability_zone = "us-east-1a"
 
   tags {
@@ -22,6 +23,7 @@ resource "aws_subnet" "public-subnet01" {
 resource "aws_subnet" "public-subnet02" {
   vpc_id = "${aws_vpc.default.id}"
   cidr_block = "${var.public_subnet_cidr02}"
+  map_public_ip_on_launch = "true"
   availability_zone = "us-east-1b"
 
   tags {
